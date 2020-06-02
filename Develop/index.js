@@ -2,9 +2,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
 const generateMarkdown = require("./utils/generateMarkdown");
-
 const writeFileAsync = util.promisify(fs.writeFile);
-
 
 const questions = [
     {
@@ -33,9 +31,16 @@ const questions = [
         message: "What is your project used for?"
     },
     {
-        type: "input",
+        type: "list",
         name: "license",
-        message: "Please provide any licenses."
+        message: "Please provide any licenses.",
+        choices: [
+            "Apache",
+            "BSD3-clause",
+            "GPLv3",
+            "MIT",
+            "Other",
+        ]
     },
     {
         type: "input",
@@ -54,10 +59,6 @@ function promptUser() {
     return inquirer.prompt(questions);
 }
 
-function writeToFile(fileName, data) {
-}
-
-
 async function init() {
 
     try {
@@ -71,7 +72,6 @@ async function init() {
     } catch (err) {
         console.log(err);
     }
-
 };
 
 init();

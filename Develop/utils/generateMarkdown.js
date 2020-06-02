@@ -2,9 +2,9 @@ function generateMarkdown(data) {
   return `
 # ${data.title}
 
-// [![npm version](http://img.shields.io/npm/v/REPO.svg?style=flat)](https://npmjs.org/package/REPO "View this project on npm")
 
-// https://img.shields.io/badge/installation-${data.installation}-ORANGE
+
+![license](https://img.shields.io/badge/license-${data.license}-ORANGE)
 
 ##Description
 ${data.description}
