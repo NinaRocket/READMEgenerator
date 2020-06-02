@@ -4,6 +4,7 @@ const util = require("util");
 const generateMarkdown = require("./utils/generateMarkdown");
 const writeFileAsync = util.promisify(fs.writeFile);
 
+//array of objects to ask user questions
 const questions = [
     {
         type: "input",
@@ -55,10 +56,12 @@ const questions = [
 
 ];
 
+//function runs the prompts to ask the user questions using inquirer
 function promptUser() {
     return inquirer.prompt(questions);
 }
 
+//async function to write readme
 async function init() {
 
     try {
