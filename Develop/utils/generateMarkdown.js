@@ -2,7 +2,6 @@ function generateMarkdown(data) {
   return `
 # ${data.title}
 
-//create badge for license
 ![license](https://img.shields.io/badge/license-${data.license}-ORANGE)
 
 ##Description

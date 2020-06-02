@@ -1,28 +1,26 @@
 
-# This is for my homies
+# Readme Generator
 
-
-
-![license](https://img.shields.io/badge/license-Apache-ORANGE)
+![license](https://img.shields.io/badge/license-ISC-ORANGE)
 
 ##Description
-We get lit
+This project will generate a readme based on user input.
 
 ##Table of Contents
-no
+n/a
 
 ##Installation
-none
+node
 
 ##Usage
-your mom
+Generating a readme.
 
 ##Licenses
-Apache
+ISC
 
 ##Contributors
-Nina
+Nina Rocket
 
 ##Tests
-Ok
+n/a
 

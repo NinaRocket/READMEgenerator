@@ -39,6 +39,7 @@ const questions = [
             "Apache",
             "BSD3-clause",
             "GPLv3",
+            "ISC",
             "MIT",
             "Other",
         ]
